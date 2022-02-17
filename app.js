@@ -5487,40 +5487,40 @@ if (UI.dark_mode) {
 }
 if (UI.dark_mode) {
   document.write(
-    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/goindex-extended/b46bb643bb1c1314b669142e5e62d96a877b952b/css/mdui_v2_dark.min.css">'
+    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/css/mdui_v2_dark.min.css">'
   );
 } else {
   document.write(
-    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/goindex-extended/b46bb643bb1c1314b669142e5e62d96a877b952b/css/mdui_v2.min.css">'
+    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/css/mdui_v2.min.css">'
   );
 }
 if (UI.dark_mode) {
   document.write(
-    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/goindex-extended/f9af6b2192974a4a9c1b222efed8d29ca6cd1927/css/nexmoe_v2_dark.min.css">'
+    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/GDIndex/3456869088d565716450b227780432f4f717bb9e/css/nexmoe_v2_dark.min.css">'
   );
 } else {
   document.write(
-    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/goindex-extended/f9af6b2192974a4a9c1b222efed8d29ca6cd1927/css/nexmoe_v2.min.css">'
+    '<link rel="stylesheet" href="//rawcdn.githack.com/cheems/GDIndex/3456869088d565716450b227780432f4f717bb9e/css/nexmoe_v2.min.css">'
   );
 }
 document.write(
-  '<script src="//rawcdn.githack.com/cheems/goindex-extended/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/mdui.min.js"></script>'
+  '<script src="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/mdui.min.js"></script>'
 );
 document.write(
-  '<script src="//rawcdn.githack.com/cheems/goindex-extended/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/flv.min.js"></script>'
+  '<script src="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/flv.min.js"></script>'
 );
 document.write(
-  '<script src="//rawcdn.githack.com/cheems/goindex-extended/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/DPlayer.min.js"></script>'
+  '<script src="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/DPlayer.min.js"></script>'
 );
 document.write(
-  '<script src="//cdn.jsdelivr.net/npm/marked@4.0.0/marked.min.js"></script>'
+  '<script src="//rawcdn.githack.com/cheems/GDIndex/295ceaf2d64b2cb8578b21c0313d75b7bc8738a1/js/markdown-it.min.js"></script>'
 );
 document.write(
-  "<style>.mdui-appbar .mdui-toolbar{height:56px;font-size:1pc}.mdui-toolbar>i{opacity:.5}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-container{max-width:980px}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1; color: #000}@media screen and (max-width:980px){.mdui-list-item .mdui-text-right{display:none}.mdui-container{width:100%!important;margin:0}}</style>"
+  "<style>.mdui-appbar .mdui-toolbar{height:56px;font-size:1pc}.mdui-toolbar>i{opacity:.5}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-container{max-width:980px}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1}@media screen and (max-width:980px){.mdui-list-item .mdui-text-right{display:none}.mdui-container{width:100%!important;margin:0}}</style>"
 );
 if (UI.dark_mode) {
   document.write(
-    "<style>* {box-sizing: border-box}body{color:rgba(255,255,255,.87);background-color:#1E252F}.mdui-theme-primary-${UI.main_color} .mdui-color-theme{background-color:#1E252F!important} .nexmoe-item{background-color: #ffffff0d!important;box-shadow:0 0.2em 1em rgb(0 0 0 / 30%)!important} .mdui-list-item{border: 1px solid rgb(255 255 255 / 10%)!important}.mdui-toolbar>a:last-child{color: #FFF}.mdui-select-menu{box-shadow: 0 0.2em 1em rgba(100, 100, 100, 0.2)!important} .mdui-text-color-blue-grey-500{color: #e3e4e5 !important} .mdui-textfield-label{color: rgba(255, 255, 255, .54)!important}</style>"
+    "<style>* {box-sizing: border-box}body{color:rgba(255,255,255,.87);background-color:#1E252F}.mdui-theme-primary-${UI.main_color} .mdui-color-theme{background-color:#1E252F!important} .nexmoe-item{background-color: #ffffff0d!important;box-shadow:0 0.2em 1em rgb(0 0 0 / 30%)!important} .mdui-list-item{border: 1px solid rgb(255 255 255 / 10%)!important} .mdui-select-menu{box-shadow: 0 0.2em 1em rgba(100, 100, 100, 0.2)!important} .mdui-text-color-blue-grey-500{color: #e3e4e5 !important} .mdui-textfield-label{color: rgba(255, 255, 255, .54)!important}</style>"
   );
 }
 
@@ -5535,33 +5535,6 @@ if(UI.helpURL === '') {
     "<style>.dummyclass2{display: none!important}</style>"
   );
 }
-
-const nav_style_colors = {
-  "red": {"background-color": "#FF5252", "color": "#FFF"},
-  "pink": {"background-color": "#FF4081", "color": "#FFF"},
-  "purple": {"background-color": "#E040FB", "color": "#FFF"},
-  "deep-purple": {"background-color": "#7C4DFF", "color": "#FFF"},
-  "indigo": {"background-color": "#536DFE", "color": "#FFF"},
-  "blue": {"background-color": "#448AFF", "color": "#FFF"},
-  "light-blue": {"background-color": "#40C4FF", "color": "#FFF"},
-  "cyan": {"background-color": "#18FFFF", "color": "#000"},
-  "teal": {"background-color": "#64FFDA", "color": "#000"},
-  "green": {"background-color": "#69F0AE", "color": "#FFF"},
-  "light-green": {"background-color": "#B2FF59", "color": "#000"},
-  "lime": {"background-color": "#EEFF41", "color": "#000"},
-  "yellow": {"background-color": "#FFFF00", "color": "#000"},
-  "amber": {"background-color": "#FFD740", "color": "#FFF"},
-  "orange": {"background-color": "#FFAB40", "color": "#FFF"},
-  "deep-orange": {"background-color": "#FF6E40", "color": "#FFF"},
-}
-
-document.write(
-    `<style>.nav-style > a:hover {background-color: ${nav_style_colors[UI.accent_color]["background-color"]}!important; color: ${nav_style_colors[UI.accent_color]["color"]}!important}</style>`
-  );
-
-document.write(
-  "<style>.dummyclass3{max-width: 570px}@media screen and (max-width:980px){.dummyclass3{display:none}}</style>"
-);
 
 function init() {
   document.siteName = $("title").html();
@@ -5579,21 +5552,8 @@ function init() {
 	 	<div id="readme_md" class="mdui-typo nexmoe-item" style="display:none; padding: 20px 0;"></div>
   </div>
   <div class="mdui-center mdui-text-center mdui-text-color-blue-grey-5001" style="margin-bottom: 20px">${UI.footer_text}</div>
-  `;
-  if (UI.credits) {
-    html += `
-    <div style="margin-bottom: 20px" class="mdui-center mdui-text-center">
-      <a href="https://github.com/cheems/goindex-extended" target="_blank">
-        <img src="https://img.shields.io/static/v1?label=cheems&amp;message=goindex-extended&amp;color=1E89F2&amp;labelColor=374455&amp;logo=github" alt="cheems - goindex-extended">
-      </a>
-    </div>
-    </div>
-    `
-  } else {
-    html += `
-    </div>
-    `
-  }
+</div>
+	`;
   $("body").html(html);
 }
 const Os = {
@@ -5620,11 +5580,7 @@ function render(path) {
   if (path.indexOf("?") > 0) {
     path = path.substr(0, path.indexOf("?"));
   }
-  if (UI.title_include_path || UI.title_include_drive_name) {
-    title(path);
-  } else {
-    $("title").html(`${document.siteName}`);
-  }
+  $("title").html(`${document.siteName}`);
   nav(path);
   var reg = /\/\d+:$/g;
   if (window.MODEL.is_search_page) {
@@ -5635,34 +5591,6 @@ function render(path) {
     list(path);
   } else {
     file(path);
-  }
-}
-function title(path) {
-  if (path.slice(-1) !== "/") {
-    path = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
-  } else {
-    if (UI.title_include_path === "full-path") {
-      path = decodeURIComponent(path.replaceAll("%5C%5C", "%5C"));
-    } else if (UI.title_include_path === "current-directory") {
-      path = "/" + decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C")) + "/"
-    }
-  }
-  var cur = window.current_drive_order || 0;
-  var drive_name = window.drive_names[cur];
-  path = path.replace(`/${cur}:`, '');
-  var model = window.MODEL;
-  var display_title =  `${document.siteName}`
-  if (UI.title_include_drive_name) {
-    display_title += ` - ${drive_name}`
-  }
-  if (model.is_search_page) {
-    display_title += ` - Search Result for ${model.q}`
-    $('title').html(display_title);
-  } else {
-    if (UI.title_include_path) {
-      display_title += ` - ${path}`
-    }
-    $('title').html(display_title);
   }
 }
 function nav(path) {
@@ -5676,8 +5604,8 @@ function nav(path) {
       idx === cur ? 'selected="selected"' : ""
     } >${name}</option>`;
   });
-  html += `</select><div class="mdui-toolbar nav-style dummyclass3" style="margin-top:0px!important">`;
-  html += `<a href="/${cur}:/" class="mdui-typo-headline folder" style="background-color:transparent">${document.siteName}</a>`;
+  html += `</select>`;
+  html += `<a href="/${cur}:/" class="mdui-typo-headline folder">${document.siteName}</a>`;
   if (!model.is_search_page) {
     var arr = path.trim("/").split("/");
     var p = "/";
@@ -5690,11 +5618,10 @@ function nav(path) {
         if (n == "") {
           break;
         }
-        html += `<i class="mdui-icon material-icons mdui-icon-dark folder" style="margin:0;">chevron_right</i><a class="folder" style="background-color:transparent;max-width:230px" href="/${cur}:${p}">${n}</a>`;
+        html += `<i class="mdui-icon material-icons mdui-icon-dark folder" style="margin:0;">chevron_right</i><a class="folder" href="/${cur}:${p}">${n}</a>`;
       }
     }
   }
-  html += `</div>`;
   var search_text = model.is_search_page ? model.q || "" : "";
   const isMobile = Os.isMobile;
   var search_bar = `<div class="mdui-toolbar-spacer"></div>
@@ -5712,8 +5639,9 @@ function nav(path) {
         <button class="mdui-textfield-icon mdui-btn mdui-btn-icon dummyclass2" onclick="window.open('${UI.helpURL}','_blank')">
           <i class="mdui-icon material-icons">help_outline</i>
         </button>`;
-  html += search_bar;
-  
+  if (model.root_type < 2) {
+    html += search_bar;
+  }
   $("#nav").html(html);
   mdui.mutation();
   mdui.updateTextFields();
@@ -5764,7 +5692,7 @@ function list(path) {
 	<i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i>
 	    </div>
       <div class="mdui-col-sm-2 mdui-text-right dummyclass">
-    Acción
+    Acciones
   <i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i>
     </div>  
 	    </li> 
@@ -5773,7 +5701,7 @@ function list(path) {
 	 <div class="mdui-row"> 
 	  <ul id="list" class="mdui-list"> 
 	  </ul> 
-	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Un total de <span class="number"></span> archivos(s)</div>
+	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Un total de <span class="number"></span> ítem(s)</div>
 	 </div>
 	`;
   $("#content").html(content);
@@ -5885,12 +5813,12 @@ function append_files_to_list(path, files) {
       var ddl_link = p;
       const filepath = path + item.name;
       var c = "file";
-      if (is_lastpage_loaded && item.name == "README.md" && !UI.hide_readme_md) {
+      if (is_lastpage_loaded && item.name == "README.md") {
         get_file(p, item, function (data) {
           markdown("#readme_md", data);
         });
       }
-      if (item.name == "HEAD.md" && !UI.hide_head_md) {
+      if (item.name == "HEAD.md") {
         get_file(p, item, function (data) {
           markdown("#head_md", data);
         });
@@ -5904,9 +5832,6 @@ function append_files_to_list(path, files) {
         targetFiles.push(filepath);
         p += "?a=view";
         c += " view";
-      }
-      if (item["size"] === ""){
-        item["size"] = "— — —";
       }
       html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="${p}" class="${c}">
 	          <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate" title="${item.name}">
@@ -5980,7 +5905,7 @@ function render_search_result_list() {
 	 <div class="mdui-row"> 
 	  <ul id="list" class="mdui-list"> 
 	  </ul> 
-	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Total <span class="number"></span> item(s)</div>
+	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Un total de <span class="number"></span> ítem(s)</div>
 	 </div>
 	 <div id="readme_md" class="mdui-typo" style="display:none; padding: 20px 0;"></div>
 	`;
@@ -6069,9 +5994,6 @@ function append_search_result_to_list(files) {
         ) >= 0
       ) {
         c += " view";
-      }
-      if (item["size"] === ""){
-        item["size"] = "— — —";
       }
       html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a id="${item["id"]}" gd-type="${item.mimeType}" onclick="onSearchResultItemClick(this)" class="${c}">
 	          <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate" title="${item.name}">
@@ -6195,7 +6117,6 @@ function file_code(path) {
     md: "Markdown",
   };
   var name = path.split("/").pop();
-  var file_name = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
   var ext = name.split(".").pop().toLowerCase();
   var href = window.location.origin + path;
   var content = `
@@ -6203,17 +6124,13 @@ function file_code(path) {
 <pre id="editor" ></pre>
 </div>
 <div class="mdui-textfield">
-	<label class="mdui-textfield-label">Nombre del archivo</label>
-	<input class="mdui-textfield-input" type="text" value="${file_name}"/>
-</div>
-<div class="mdui-textfield">
-	<label class="mdui-textfield-label">Enlace de descarga</label>
+	<label class="mdui-textfield-label">Download Link</label>
 	<input class="mdui-textfield-input" type="text" value="${href}"/>
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
-<script src="//cdn.jsdelivr.net/gh/cheems/goindex-extended/js/ace.js"></script>
-<script src="//cdn.jsdelivr.net/gh/cheems/goindex-extended/js/ext-language_tools.js"></script>
+<script src="//cdn.jsdelivr.net/gh/cheems/GDIndex/js/ace.js"></script>
+<script src="//cdn.jsdelivr.net/gh/cheems/GDIndex/js/ext-language_tools.js"></script>
 	`;
   $("#content").html(content);
   $.get(path, function (data) {
@@ -6243,7 +6160,6 @@ function copyToClipboard(str) {
 }
 function file_video(path) {
   const url = window.location.origin + path;
-  var file_name = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
   let player_items = [
     {
       text: "MXPlayer(Free)",
@@ -6263,7 +6179,7 @@ function file_video(path) {
     )
     .join("");
   player_items += `<li class="mdui-divider"></li>
-                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copiar enlace</a></li>`;
+                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;
   const playBtn = `
       <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
         <i class="mdui-icon material-icons">&#xe039;</i>Play In External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
@@ -6275,10 +6191,6 @@ function file_video(path) {
 	<div class="mdui-video-fluid mdui-center" id="dplayer"></div>
 	<br>${playBtn}
 	<!-- ???? -->
-  <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Nombre del archivo</label>
-	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
-  </div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
@@ -6305,7 +6217,6 @@ function file_video(path) {
 }
 function file_audio(path) {
   var url = window.location.origin + path;
-  var file_name = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
   var content = `
 <div class="mdui-container-fluid">
 	<br>
@@ -6314,10 +6225,6 @@ function file_audio(path) {
 	</audio>
 	<br>
 	<!-- ???? -->
-  <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Nombre del archivo</label>
-	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
-  </div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
@@ -6333,20 +6240,9 @@ function file_pdf(path) {
   const file_name = decodeURI(
     path.slice(path.lastIndexOf("/") + 1, path.length)
   );
-  var display_name = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
   var content = `
 	<object data="${inline_url}" type="application/pdf" name="${file_name}" style="width:100%;height:94vh;"><embed src="${inline_url}" type="application/pdf"/></object>
-  <br>
-	<!-- ???? -->
-  <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Nombre del archivo</label>
-	  <input class="mdui-textfield-input" type="text" value="${display_name}"/>
-  </div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Enlace de descarga</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-  <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+    <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
   $("#content")
     .removeClass("mdui-container")
@@ -6356,7 +6252,6 @@ function file_pdf(path) {
 }
 function file_image(path) {
   var url = window.location.origin + path;
-  var file_name = decodeURIComponent(path.trim("/").split("/").slice(-1)[0].replaceAll("%5C%5C", "%5C"));
   const currentPathname = window.location.pathname;
   const lastIndex = currentPathname.lastIndexOf("/");
   const fatherPathname = currentPathname.slice(0, lastIndex + 1);
@@ -6407,12 +6302,8 @@ function file_image(path) {
 	    <img class="mdui-img-fluid" src="${url}"/>
     </div>
 	<br>
-  <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Nombre del archivo</label>
-	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
-  </div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Enlace de descarga</label>
+	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
         <br>
@@ -6493,8 +6384,13 @@ String.prototype.trim = function (char) {
   return this.replace(/^\s+|\s+$/g, "");
 };
 function markdown(el, data) {
-  var html = marked.parse(data);
-  $(el).show().html(html);
+  if (window.md == undefined) {
+    window.md = window.markdownit();
+    markdown(el, data);
+  } else {
+    var html = md.render(data);
+    $(el).show().html(html);
+  }
 }
 window.onpopstate = function () {
   var path = window.location.pathname;
