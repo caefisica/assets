@@ -28,7 +28,7 @@ jobs:
           filename=$(basename "$file" .pdf)
           html_file="$filename".html
           if [ ! -f "$html_file" ]; then
-            $LATEXML "$file" --output="$html_file"
+            latexml "$file" --output="$html_file"
           fi
         done
 
