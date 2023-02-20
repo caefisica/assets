@@ -1,5 +1,9 @@
 # Screenshot Generator
 
+```
+Este proyecto fue movido a https://github.com/caefisica/web, en /assets/go
+```
+
 Este es un sencillo script Golang que genera capturas de pantalla de una lista de sitios web. Utiliza el paquete chromedp para ejecutar un navegador Chrome en modo headless y toma una captura de pantalla de cada sitio web de la lista.
 
 ## Requisitos

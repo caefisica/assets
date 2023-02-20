@@ -1,5 +1,9 @@
 # Extractor de enlaces Markdown
 
+```
+Este proyecto fue movido a https://github.com/caefisica/web, en /assets/go
+```
+
 Esta es una herramienta escrita en Golang que busca el campo de enlace en archivos Markdown y guarda los valores de enlace en un archivo de texto. Está pensado para ser usado con Screenshot Generator. Probablemente tendrías que modificar algunas partes, como el nombre de la carpeta en main.go para que te sea útil.
 
 ## Uso
