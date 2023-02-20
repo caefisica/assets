@@ -1,0 +1,14 @@
+latexml (LaTeXML version 0.8.6) processing ./rivera9.pdf
+(Digesting TeX rivera9...
+(Loading /usr/share/perl5/LaTeXML/Package/TeX.pool.ltxml...
+(Loading /usr/share/perl5/LaTeXML/Package/eTeX.pool.ltxml... 0.00 sec)
+(Loading /usr/share/perl5/LaTeXML/Package/pdfTeX.pool.ltxml... 0.00 sec) 0.10 sec)
+Error:invalid:binary Input file /home/runner/work/assets/assets/rivera9.pdf appears to be binary. Ignoring.
+	at rivera9.pdf
+	In Mouth[/home/runner/work/assets/assets... /home/runner/work/assets/assets/rivera9.pdf
+(Processing content /home/runner/work/assets/assets/rivera9.pdf... 0.00 sec) 0.10 sec)
+(Building...
+(Loading compiled schema /usr/share/perl5/LaTeXML/resources/RelaxNG/LaTeXML.model... 0.01 sec) 0.01 sec)
+(Rewriting... 0.01 sec)
+(Finalizing... 0.00 sec)
+Conversion complete 1 error (See /home/runner/work/assets/assets/rivera9.latexml.log) (reqd. 0.23s)
