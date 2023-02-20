@@ -25,10 +25,12 @@ jobs:
     - name: Convert PDF to HTML
       run: |
         for file in $(find . -type f -name '*.pdf'); do
-          filename=$(basename "$file" .pdf)
-          html_file="$filename".html
-          if [ ! -f "$html_file" ]; then
-            latexml "$file" --output="$html_file"
+          if file "$file" | grep -q PDF; then
+            filename=$(basename "$file" .pdf)
+            html_file="$filename".html
+            if [ ! -f "$html_file" ]; then
+              latexml "$file" --output="$html_file"
+            fi
           fi
         done
 
