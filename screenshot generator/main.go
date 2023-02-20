@@ -43,11 +43,7 @@ func main() {
     ctx, cancel := chromedp.NewContext(allocCtx)
     defer cancel()
 
-    if _, err := os.Stat("results"); os.IsNotExist(err) {
-        os.Mkdir("results", os.ModePerm)
-    }
-
-    for i, website := range websites {
+    for _, website := range websites {
         err := chromedp.Run(ctx, chromedp.Navigate(website))
         if err != nil {
             fmt.Println(err)
@@ -67,7 +63,19 @@ func main() {
             continue
         }
 
-        filename := fmt.Sprintf("results/screenshot%d.png", i)
+        websiteDir := strings.Replace(website, "https://", "", 1)
+        websiteDir = strings.Replace(websiteDir, "http://", "", 1)
+        websiteDir = strings.Replace(websiteDir, "www.", "", 1)
+        websiteDir = strings.TrimSuffix(websiteDir, "/")
+        if _, err := os.Stat(websiteDir); os.IsNotExist(err) {
+            err := os.Mkdir(websiteDir, os.ModePerm)
+            if err != nil {
+                fmt.Println(err)
+                continue
+            }
+        }
+
+        filename := fmt.Sprintf("%s/%s.png", websiteDir, websiteDir)
         err = ioutil.WriteFile(filename, buf, os.ModePerm)
         if err != nil {
             fmt.Println(err)
