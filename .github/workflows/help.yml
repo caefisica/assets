@@ -3,7 +3,7 @@ name: Convertir PDF a HTML
 on:
   push:
     paths:
-      - '*.pdf'
+      - '**/*.pdf'
 
 jobs:
   build:
@@ -17,6 +17,11 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y latexml
+
+    - name: Give PDF files permissions
+      run: |
+        find . -type f -name '*.pdf' -exec chmod +x {} \;
+
     - name: Convert PDF to HTML
       run: |
         for file in $(find . -type f -name '*.pdf'); do
@@ -26,12 +31,14 @@ jobs:
             $LATEXML "$file" --output="$html_file"
           fi
         done
+
     - name: Commit HTML Files
       run: |
         git config --local user.email "github-actions@github.com"
         git config --local user.name "Github Actions"
         git add .
         git commit -m "Convert PDF to HTML" || echo "No changes to commit"
+
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3.10.0
       with:
