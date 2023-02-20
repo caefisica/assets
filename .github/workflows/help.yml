@@ -44,7 +44,7 @@ jobs:
       with:
         commit-message: Created HTML files for PDF files
         title: 'Automated HTML conversion'
-        branch: html-conversion-{{ github.sha }}
+        branch: html-conversion-$(date +%s)
         delete-branch: true
         labels: automated-update
         base: main
