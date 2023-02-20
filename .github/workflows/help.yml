@@ -45,7 +45,7 @@ jobs:
       run: |
         git config --local user.email "github-actions@github.com"
         git config --local user.name "Github Actions"
-        git add .
+        git add -A
         git commit -m "Convert PDF to HTML" || echo "No changes to commit"
 
     - name: Create pull request
