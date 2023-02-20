@@ -10,8 +10,8 @@ import (
 
 func main() {
     // Change to your preferred folder/files!
-    directory := "./folder"
-    outputPath := "./links.txt"
+    directory := filepath.Join(os.Getenv("GITHUB_WORKSPACE"), "content/experimental")
+    outputPath := filepath.Join(os.Getenv("GITHUB_WORKSPACE"), "assets/go/lists.txt")
 
     // We use Regex to get the link values
     re := regexp.MustCompile(`^link:\s*"(.*)"$`)
@@ -44,7 +44,7 @@ func main() {
                 match := re.FindStringSubmatch(line)
                 if len(match) == 2 {
                     link := match[1]
-					fmt.Printf("File: %s, Link: %s\n", path, link)
+                    fmt.Printf("File: %s, Link: %s\n", path, link)
                     linkString := fmt.Sprintf("%s\n", link)
                     _, err := outputFile.WriteString(linkString)
                     if err != nil {
