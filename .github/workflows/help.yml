@@ -41,4 +41,4 @@ jobs:
         delete-branch: true
         labels: automated-update
         base: main
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.COMMITS_ALLOWED }}
