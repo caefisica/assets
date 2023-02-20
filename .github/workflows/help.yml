@@ -35,7 +35,8 @@ jobs:
         done
 
     - name: Print working directory
-      run: echo "Working directory: $(pwd)"
+      run: |
+        echo "Working directory: $(pwd)"
 
     - name: List files in working directory
       run: ls -al
