@@ -3,7 +3,7 @@ name: Convertir PDF a HTML
 on:
   push:
     paths:
-      - '**/*.pdf'
+      - '*.pdf'
 
 jobs:
   build:
@@ -13,41 +13,32 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install LatexML
+    - name: Actualizar e instalar dependencias
       run: |
         sudo apt-get update
-        sudo apt-get install -y latexml
+        sudo apt install -y libfontconfig1 libcairo2 libjpeg-turbo8 poppler-data
 
-    - name: Give PDF files permissions
+    - name: Descargar pdf2htmlEX
       run: |
-        find . -type f -name '*.pdf' -exec chmod +x {} \;
+        wget https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.deb
+        sudo mv pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.deb pdf2htmlEX.deb
+    
+    - name: Instalar pdf2htmlEX
+      run: |
+        sudo apt install ./pdf2htmlEX.deb
+        pdf2htmlEX -v
 
-    - name: Convert PDF to HTML
+    - name: Convertir PDF en HTML
       run: |
         for file in $(find . -type f -name '*.pdf'); do
-          if file "$file" | grep -q PDF; then
-            filename=$(basename "$file" .pdf)
-            html_file="$filename".html
-            if [ ! -f "$html_file" ]; then
-              latexml "$file" --output="$html_file"
-            fi
-          fi
+          pdf2htmlEX --zoom 1.3 "$file"
+          mv "$(dirname "$file")/$(basename "$file" .pdf).html" "$(dirname "$file")/$(basename "$file" .pdf).html"
         done
-
-    - name: Commit HTML Files
-      run: |
-        git config --local user.email "github-actions@github.com"
-        git config --local user.name "Github Actions"
-        git add -A
-        git commit -m "Convert PDF to HTML" || echo "No changes to commit"
-
-    - name: Create pull request
-      uses: peter-evans/create-pull-request@v3.10.0
+        
+    - name: Crear Pull Request
+      uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: Created HTML files for PDF files
-        title: 'Automated HTML conversion'
-        branch: html-conversion
-        delete-branch: true
-        labels: automated-update
-        base: main
-        token: ${{ secrets.COMMITS_ALLOWED }}
+        commit-message: 'Convertir PDF a HTML'
+        branch: 'convertir-pdf-a-html'
+        title: 'Convertir PDF a HTML'
+        body: 'Convertir todos los PDF en HTML'
