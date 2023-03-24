@@ -22,7 +22,7 @@ jobs:
       run: |
         wget https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.deb
         sudo mv pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.deb pdf2htmlEX.deb
-    
+
     - name: Instalar pdf2htmlEX
       run: |
         sudo apt install ./pdf2htmlEX.deb
@@ -30,6 +30,7 @@ jobs:
 
     - name: Convertir PDF en HTML
       run: |
+        cd "$GITHUB_WORKSPACE"
         for file in $(find . -type f -name '*.pdf' -not -path '*/\.*'); do
           html_file="$(dirname "$file")/$(basename "$file" .pdf).html"
           if [ ! -f "$html_file" ]; then
@@ -37,7 +38,7 @@ jobs:
             mv "$(dirname "$file")/$(basename "$file" .pdf).html" "$html_file"
           fi
         done
-        
+
     - name: Crear Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
