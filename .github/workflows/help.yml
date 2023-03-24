@@ -39,7 +39,7 @@ jobs:
             echo "Checking if HTML file exists: $html_file"
             if [ ! -f "$html_file" ]; then
               echo "Converting PDF to HTML..."
-              pdf2htmlEX --zoom 1.3 "$file"
+              pdf2htmlEX --zoom 1.3 "${file}"
             else
               echo "HTML file already exists. Skipping conversion."
             fi
