@@ -31,8 +31,11 @@ jobs:
     - name: Convertir PDF en HTML
       run: |
         for file in $(find . -type f -name '*.pdf' -not -path '*/\.*'); do
-          pdf2htmlEX --zoom 1.3 "$file"
-          mv "$(dirname "$file")/$(basename "$file" .pdf).html" "$(dirname "$file")/$(basename "$file" .pdf).html"
+          html_file="$(dirname "$file")/$(basename "$file" .pdf).html"
+          if [ ! -f "$html_file" ]; then
+            pdf2htmlEX --zoom 1.3 "$file"
+            mv "$(dirname "$file")/$(basename "$file" .pdf).html" "$html_file"
+          fi
         done
         
     - name: Crear Pull Request
